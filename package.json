@@ -16,6 +16,7 @@
     "reselect": "^4.0.0"
   },
   "devDependencies": {
+    "redux-devtools-extension": "^2.13.8",
     "webpack-dev-server": "2.11.2"
   }
 }
