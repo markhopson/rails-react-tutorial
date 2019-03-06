@@ -5,6 +5,10 @@ class V1::ThingsController < ApplicationController
         {
           :name => 'some-thing',
           :guid => '328fcb71-f383-4de0-b1d8-d81a4c53ffcf'
+        },
+        {
+          :name => 'some-thing-else',
+          :guid => '328fcb71-f383-4de0-b1d8-d81a4c53ffcg'
         }
       ]
     }
