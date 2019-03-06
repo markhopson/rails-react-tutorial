@@ -13,12 +13,18 @@ function getThings() {
 
 class HelloWorld extends React.Component {
   render () {
+    const { things } = this.props;
+
+    const thingsList = things.map((thing) => {
+      return <li>{thing.name} {thing.guid}</li>
+    })
+    
     return (
       <React.Fragment>
         Greeting: {this.props.greeting}
-
         <button className="getThingsBtn" onClick={() => this.props.getThings()}>getThings</button>
-
+        <br />
+        <ul>{ thingsList }</ul>
       </React.Fragment>
     );
   }
