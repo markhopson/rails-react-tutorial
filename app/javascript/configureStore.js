@@ -13,14 +13,7 @@ const initialState = {
   ] 
 };
 
-function rootReducer(state, action) {
-  console.log(action.type);
-  switch (action.type) {
-    case "GET_THINGS_SUCCESS": 
-      return { things: action.json.things };
-  }
-  return state;
-}
+import rootReducer from "./reducers";
 
 export default function configureStore() {
   const store = createStore(
